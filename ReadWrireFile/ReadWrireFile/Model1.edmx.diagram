@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae19c4c0475b46a08597d975bfd06a24" Name="Diagram1">
+        <EntityTypeShape EntityType="QLTTOLModel.BANGHOCPHI" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.BANGLUONG" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.DIEMDANH" Width="1.5" PointX="10.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.GIAOVIEN" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.HOADON" Width="1.5" PointX="8.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.HOCSINH" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.KHOI" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.LICHHOC" Width="1.5" PointX="7.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.LOAILOP" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.LOP" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.LUONGDINHMUC" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.MONHOC" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.NHANVIEN" Width="1.5" PointX="3" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.PHIEULUONG" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.TAIKHOAN" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.THANNHAN" Width="1.5" PointX="5.25" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTOLModel.THOIKHOABIEU" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGHOCPH__MaHoa__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGHOCPH__MaHoc__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGHOCPH__MaNha__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGLUONG__MaGia__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGLUONG__MaNha__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__BANGLUONG__MaPhi__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__DIEMDANH__MaHocS__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__DIEMDANH__MaLich__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__GIAOVIEN__MaLuon__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__GIAOVIEN__MaMonH__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__GIAOVIEN__MaTaiK__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__LOP__MaGiaoVien__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__PHIEULUON__MaGia__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__THOIKHOAB__MaGia__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__HOADON__MaHocSin__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__HOADON__MaNhanVi__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__HOCSINH__MaTaiKh__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__THANNHAN__MaHocS__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__LOP__MaKhoi__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__LICHHOC__MaLop__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__THOIKHOAB__MaLic__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__LOP__MaLoaiLop__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__THOIKHOAB__MaLop__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__NHANVIEN__MaTaiK__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTOLModel.FK__PHIEULUON__MaNha__787EE5A0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

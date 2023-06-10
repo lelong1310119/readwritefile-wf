@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="readfileModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="pav_condition">
+          <Key>
+            <PropertyRef Name="sectionId" />
+          </Key>
+          <Property Name="sectionId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="sectionId2" Type="nvarchar" MaxLength="50" />
+          <Property Name="sectionId3" Type="nvarchar" MaxLength="50" />
+          <Property Name="roadId" Type="nvarchar" MaxLength="50" />
+          <Property Name="direction" Type="nvarchar" MaxLength="50" />
+          <Property Name="laneCode" Type="int" />
+          <Property Name="fromKP" Type="float" />
+          <Property Name="toKP" Type="float" />
+          <Property Name="length" Type="float" />
+          <Property Name="structure" Type="nvarchar" MaxLength="255" />
+          <Property Name="pavType" Type="int" />
+          <Property Name="date" Type="nvarchar" MaxLength="50" />
+          <Property Name="crackFatigueL" Type="float" />
+          <Property Name="crackFatigueM" Type="float" />
+          <Property Name="crackFatigueH" Type="float" />
+          <Property Name="crackTransverseL" Type="float" />
+          <Property Name="crackTransverseM" Type="float" />
+          <Property Name="crackTransverseH" Type="float" />
+          <Property Name="crackMiscellanenousL" Type="float" />
+          <Property Name="crackMiscellanenousM" Type="float" />
+          <Property Name="crackMiscellanenousH" Type="float" />
+          <Property Name="rutDepth" Type="float" />
+          <Property Name="IRI" Type="int" />
+          <Property Name="TV" Type="int" />
+          <Property Name="BIC" Type="nvarchar" MaxLength="50" />
+          <Property Name="EIC" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityContainer Name="readfileModelStoreContainer">
+          <EntitySet Name="pav_condition" EntityType="Self.pav_condition" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="readfileModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="pav_condition">
+          <Key>
+            <PropertyRef Name="sectionId" />
+          </Key>
+          <Property Name="sectionId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sectionId2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sectionId3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="roadId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="direction" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="laneCode" Type="Int32" />
+          <Property Name="fromKP" Type="Double" />
+          <Property Name="toKP" Type="Double" />
+          <Property Name="length" Type="Double" />
+          <Property Name="structure" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="pavType" Type="Int32" />
+          <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="crackFatigueL" Type="Double" />
+          <Property Name="crackFatigueM" Type="Double" />
+          <Property Name="crackFatigueH" Type="Double" />
+          <Property Name="crackTransverseL" Type="Double" />
+          <Property Name="crackTransverseM" Type="Double" />
+          <Property Name="crackTransverseH" Type="Double" />
+          <Property Name="crackMiscellanenousL" Type="Double" />
+          <Property Name="crackMiscellanenousM" Type="Double" />
+          <Property Name="crackMiscellanenousH" Type="Double" />
+          <Property Name="rutDepth" Type="Double" />
+          <Property Name="IRI" Type="Int32" />
+          <Property Name="TV" Type="Int32" />
+          <Property Name="BIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="readfileEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="pav_condition" EntityType="Self.pav_condition" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="readfileModelStoreContainer" CdmEntityContainer="readfileEntities1">
+          <EntitySetMapping Name="pav_condition">
+            <EntityTypeMapping TypeName="readfileModel.pav_condition">
+              <MappingFragment StoreEntitySet="pav_condition">
+                <ScalarProperty Name="sectionId" ColumnName="sectionId" />
+                <ScalarProperty Name="sectionId2" ColumnName="sectionId2" />
+                <ScalarProperty Name="sectionId3" ColumnName="sectionId3" />
+                <ScalarProperty Name="roadId" ColumnName="roadId" />
+                <ScalarProperty Name="direction" ColumnName="direction" />
+                <ScalarProperty Name="laneCode" ColumnName="laneCode" />
+                <ScalarProperty Name="fromKP" ColumnName="fromKP" />
+                <ScalarProperty Name="toKP" ColumnName="toKP" />
+                <ScalarProperty Name="length" ColumnName="length" />
+                <ScalarProperty Name="structure" ColumnName="structure" />
+                <ScalarProperty Name="pavType" ColumnName="pavType" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="crackFatigueL" ColumnName="crackFatigueL" />
+                <ScalarProperty Name="crackFatigueM" ColumnName="crackFatigueM" />
+                <ScalarProperty Name="crackFatigueH" ColumnName="crackFatigueH" />
+                <ScalarProperty Name="crackTransverseL" ColumnName="crackTransverseL" />
+                <ScalarProperty Name="crackTransverseM" ColumnName="crackTransverseM" />
+                <ScalarProperty Name="crackTransverseH" ColumnName="crackTransverseH" />
+                <ScalarProperty Name="crackMiscellanenousL" ColumnName="crackMiscellanenousL" />
+                <ScalarProperty Name="crackMiscellanenousM" ColumnName="crackMiscellanenousM" />
+                <ScalarProperty Name="crackMiscellanenousH" ColumnName="crackMiscellanenousH" />
+                <ScalarProperty Name="rutDepth" ColumnName="rutDepth" />
+                <ScalarProperty Name="IRI" ColumnName="IRI" />
+                <ScalarProperty Name="TV" ColumnName="TV" />
+                <ScalarProperty Name="BIC" ColumnName="BIC" />
+                <ScalarProperty Name="EIC" ColumnName="EIC" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
